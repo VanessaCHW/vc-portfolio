@@ -1,13 +1,15 @@
-.main {
+.maincontainer {
+  min-height: 100vh;
+}
+
+.main{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 6rem;
-  min-height: 100vh;
+  background-color: burlywood;
 }
-
-
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   
