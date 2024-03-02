@@ -4,16 +4,16 @@ import styled from "styled-components";
 
 const Experience = () => {
   return (
-    <Container>
+    <Container id="section-experience">
       <div>Experience Section</div>
     </Container>
   );
 };
-
-export default Experience;
 
 const Container = styled.div`
   width: 100%;
   color: black;
   background-color: white;
 `;
+
+export default Experience;

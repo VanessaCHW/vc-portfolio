@@ -4,16 +4,16 @@ import styled from "styled-components";
 
 const Extra = () => {
   return (
-    <Container>
+    <Container id="section-extra">
       <div>Extra Section</div>
     </Container>
   );
 };
-
-export default Extra;
 
 const Container = styled.div`
   width: 100%;
   color: blue;
   background-color: grey;
 `;
+
+export default Extra;

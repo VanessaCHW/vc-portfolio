@@ -10,9 +10,10 @@ const Landing = () => {
   );
 };
 
-export default Landing;
-
 const Container = styled.div`
-  color: pink;
-  background-color: white;
+  color: magenta;
+  background-color: pink;
+  min-height: 200vh;
 `;
+
+export default Landing;
