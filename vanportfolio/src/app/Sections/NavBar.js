@@ -8,6 +8,8 @@ const NavBar = () => {
       <LeftLogo>
         <p>VC♥</p>
       </LeftLogo>
+
+      {/* Inline list for desktop view*/}
       <NavListDesktop>
         <li>
           <NavSection href="#section-education">ÉDUCATION</NavSection>
@@ -22,6 +24,10 @@ const NavBar = () => {
           <NavSection href="#section-extra">EXTRA</NavSection>
         </li>
       </NavListDesktop>
+
+      {/* Dropdown list for mobile view
+          TODO
+      */}
     </Header>
   );
 };
