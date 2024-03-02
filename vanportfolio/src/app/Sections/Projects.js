@@ -5,14 +5,14 @@ import styled from "styled-components";
 const Projects = () => {
   return (
     <Container id="section-projets">
-      <div>Projects section</div>
+      <h1>Projets</h1>
+      <p>texte</p>
     </Container>
   );
 };
 
 const Container = styled.div`
   width: 100%;
-  color: purple;
 `;
 
 export default Projects;

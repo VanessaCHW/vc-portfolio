@@ -5,15 +5,14 @@ import styled from "styled-components";
 const Experience = () => {
   return (
     <Container id="section-experience">
-      <div>Experience Section</div>
+      <h1>Expérience</h1>
+      <p>Description</p>
     </Container>
   );
 };
 
 const Container = styled.div`
   width: 100%;
-  color: black;
-  background-color: white;
 `;
 
 export default Experience;

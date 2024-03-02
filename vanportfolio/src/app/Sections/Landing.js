@@ -13,7 +13,6 @@ const Landing = () => {
 const Container = styled.div`
   color: magenta;
   background-color: pink;
-  min-height: 200vh;
 `;
 
 export default Landing;
