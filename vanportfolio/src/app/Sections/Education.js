@@ -1,7 +1,9 @@
 "use client";
 import React from "react";
 import styled from "styled-components";
+
 import CheckItem from "../Components/CheckItem";
+import BoxSmall from "../Components/BoxSmall";
 
 const Education = () => {
   return (
@@ -19,18 +21,9 @@ const Education = () => {
           <CheckItem text="Node.js et RESTful API" />
         </ul>
       </Box>
-      <Box>
-        <h2>2016</h2>
-        <h3>Baccalauréat en Génie Électrique</h3>
-      </Box>
-      <Box>
-        <h2>2010</h2>
-        <h3>Diplôme d'études collégiales</h3>
-      </Box>
-      <Box>
-        <h2>2008</h2>
-        <h3>Diplôme d'études secondaires</h3>
-      </Box>
+      <BoxSmall year="2016" diploma="Baccalauréat en Génie Électrique" />
+      <BoxSmall year="2010" diploma="Diplôme d'études collégiales" />
+      <BoxSmall year="2008" diploma="Diplôme d'études secondaires" />
     </Container>
   );
 };
