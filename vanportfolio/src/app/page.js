@@ -25,5 +25,6 @@ export default function Home() {
 }
 
 const Main = styled.main`
-  padding: 6rem;
+  max-width: 1100px;
+  margin: auto;
 `;
