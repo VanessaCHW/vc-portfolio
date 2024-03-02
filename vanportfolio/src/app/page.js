@@ -1,4 +1,6 @@
-import styles from "./page.module.css";
+"use client";
+import styled from "styled-components";
+
 import NavBar from "./Sections/NavBar";
 import Landing from "./Sections/Landing";
 import Education from "./Sections/Education";
@@ -8,17 +10,20 @@ import Extra from "./Sections/Extra";
 
 export default function Home() {
   return (
-    <div className={styles.maincontainer}>
+    <>
       <NavBar />
       <Landing />
-      <main className={styles.main}>
-        Main section test
+      <Main>
         <Education />
         <Experience />
         <Projects />
         <Extra />
-      </main>
+      </Main>
       <footer>Footer !</footer>
-    </div>
+    </>
   );
 }
+
+const Main = styled.main`
+  padding: 6rem;
+`;
