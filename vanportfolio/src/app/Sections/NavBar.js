@@ -12,16 +12,16 @@ const NavBar = () => {
       {/* Inline list for desktop view*/}
       <NavListDesktop>
         <li>
-          <NavSection href="#section-education">ÉDUCATION</NavSection>
+          <NavSection href="#section-education">Éducation</NavSection>
         </li>
         <li>
-          <NavSection href="#section-experience">EXPÉRIENCE</NavSection>
+          <NavSection href="#section-experience">Expérience</NavSection>
         </li>
         <li>
-          <NavSection href="#section-projets">PROJETS</NavSection>
+          <NavSection href="#section-projets">Projets</NavSection>
         </li>
         <li>
-          <NavSection href="#section-extra">EXTRA</NavSection>
+          <NavSection href="#section-extra">Extra</NavSection>
         </li>
       </NavListDesktop>
 
@@ -37,8 +37,10 @@ const Header = styled.header`
   height: 56px;
   display: flex;
   justify-content: center;
-  font-size: 18px;
-  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  color: #2c2b30; /**GRIS FONCÉ */
 `;
 
 const LeftLogo = styled.div`
@@ -49,8 +51,15 @@ const LeftLogo = styled.div`
   align-items: center;
   margin-left: 20px;
 
+  background: -webkit-linear-gradient(45deg, #ff503d, #e8e5e6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
   & > p {
+    font-family: "Comfortaa", sans-serif;
     font-size: 26px;
+    padding-top: 26px;
+    font-weight: 700;
   }
 `;
 
@@ -58,15 +67,17 @@ const NavListDesktop = styled.ul`
   list-style-type: none;
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 40px;
 
   & > li {
     border-bottom: 1px solid white;
-    display: flex;
+    padding-top: 26px;
     align-items: center;
 
     &:hover {
-      border-bottom: solid;
+      background: -webkit-linear-gradient(45deg, #ff503d, #f2c4ce);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
   }
 `;
