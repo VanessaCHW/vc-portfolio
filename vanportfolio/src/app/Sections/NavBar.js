@@ -12,10 +12,7 @@ const NavBar = () => {
       {/* Inline list for desktop view*/}
       <NavListDesktop>
         <li>
-          <NavSection href="#section-education">Éducation</NavSection>
-        </li>
-        <li>
-          <NavSection href="#section-experience">Expérience</NavSection>
+          <NavSection href="#section-parcours">Parcours</NavSection>
         </li>
         <li>
           <NavSection href="#section-projets">Projets</NavSection>
