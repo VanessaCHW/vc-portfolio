@@ -5,7 +5,7 @@ import styled from "styled-components";
 const CheckItem = ({ text }) => {
   return (
     <Container>
-      <img src="/check.svg" alt="Checkmark" width={24} height={24} priority />
+      <img src="/angle.png" alt="Checkmark" width={24} height={24} />
       <div>{text}</div>
     </Container>
   );
@@ -13,11 +13,8 @@ const CheckItem = ({ text }) => {
 
 const Container = styled.li`
   list-style-type: none;
-
-  & > img,
-  div {
-    display: inline-block;
-  }
+  display: flex;
+  color: #727275;
 `;
 
 /**
