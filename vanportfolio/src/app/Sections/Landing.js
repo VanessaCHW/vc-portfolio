@@ -16,7 +16,7 @@ const Landing = () => {
 
 const Container = styled.div`
   background: url("/geometry2.png");
-  min-height: 100vh;
+  min-height: 105vh;
   text-align: center;
 `;
 
@@ -44,26 +44,4 @@ const Subtitle = styled.div`
   color: #4f4f51; /**GRIS PALE */
 `;
 
-/*
-* CSS pour texte par dessus background
-
-const LandingText = styled.div`
-  background: no-repeat url("/Vanlogov3.png");
-  background-size: contain;
-  background-position: center;
-
-  width: 100%;
-  min-height: 70vh;
-  margin: 15vh 0vh;
-  text-align: center;
-  padding-top: 28vh;
-`;
-
-const Name = styled.div`
-  font-size: 60px;
-`;
-const Subtitle = styled.div`
-  font-size: 28px;
-`;
-*/
 export default Landing;
