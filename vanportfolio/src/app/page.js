@@ -1,31 +1,24 @@
 "use client";
-import styled from "styled-components";
 
-import NavBar from "./Sections/NavBar";
-import Landing from "./Sections/Landing";
-import Timeline from "./Sections/Timeline";
-import Projects from "./Sections/Projects";
-import Extra from "./Sections/Extra";
+import GlobalStyle from "./GlobalStyle";
+import NavBar from "./Components/NavBar/NavBar";
+import Landing from "./Components/Landing/Landing";
+import Timeline from "./Components/Timeline/Timeline";
+import Projects from "./Components/Projects/Projects";
+import Extra from "./Components/Extra/Extra";
 
 export default function Home() {
   return (
     <>
+      <GlobalStyle />
       <NavBar />
-      <Landing />
-      <Main>
+      <main>
+        <Landing />
         <Timeline />
         <Projects />
         <Extra />
-      </Main>
+      </main>
       <footer>Footer !</footer>
     </>
   );
 }
-
-const Main = styled.main`
-  max-width: 1100px;
-  margin: auto;
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  color: #2c2b30; /**GRIS FONCÉ */
-`;
