@@ -15,6 +15,7 @@ const GlobalStyle = createGlobalStyle`
     --theme-light-grey: #D6D6D6;
     --theme-pink: #F2C4CE;
     --theme-orange: #F58F7C;
+    --global-pink:#F57272;
 
     --background-light:#f9fafb; /* Couleur du pattern "geometry2.png" */
 
@@ -41,7 +42,7 @@ html, body {
     font-family: "Poppins", sans-serif;
     font-weight: var(--regular-font-weight);
     font-size: var(--regular-font-size);
-    line-height: 1.5;
+    /*line-height: 1.5;*/
     
 }
 
@@ -51,7 +52,6 @@ a {
 }
 
 h1,h2,h3,h4{
-  font-family: "Nunito", sans-serif;
   letter-spacing: 1px;
   color:var(--theme-black);
 }
@@ -61,6 +61,11 @@ h1 {
   font-weight: 700;
   margin-bottom: 30px;
 }
+
+div{
+  font-family: "Poppins", sans-serif;
+}
+
 
 `;
 
