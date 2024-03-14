@@ -5,7 +5,7 @@ import styled from "styled-components";
 const Landing = () => {
   return (
     <Container>
-      <LandingImg src="/Vanlogov3.png" />
+      <LandingImg src="/landing.png" />
       <LandingText>
         <Portrait>&gt; portrait virtuel</Portrait>
         <Name>vanessa chan</Name>
