@@ -6,6 +6,7 @@ import Landing from "./Components/Landing/Landing";
 import Timeline from "./Components/Timeline/Timeline";
 import Projects from "./Components/Projects/Projects";
 import Extra from "./Components/Extra/Extra";
+import Footer from "./Components/Footer/Footer";
 
 export default function Home() {
   return (
@@ -17,8 +18,8 @@ export default function Home() {
         <Timeline />
         <Projects />
         <Extra />
+        <Footer />
       </main>
-      <footer>Footer !</footer>
     </>
   );
 }

@@ -6,7 +6,7 @@ const NavBar = () => {
   return (
     <Header>
       <LeftLogo>
-        <p>VC♥</p>
+        <img height="32" src="icon-lotusc.png" />
       </LeftLogo>
 
       {/* Inline list for desktop view*/}
@@ -19,6 +19,9 @@ const NavBar = () => {
         </li>
         <li>
           <NavSection href="#section-extra">Extra</NavSection>
+        </li>
+        <li>
+          <NavSection href="#section-contact">Contact</NavSection>
         </li>
       </NavListDesktop>
 
@@ -34,10 +37,10 @@ const Header = styled.header`
   height: 56px;
   display: flex;
   justify-content: center;
+  align-items: center;
   font-family: "Poppins", sans-serif;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 500;
-  color: var(--theme-dark-grey);
 `;
 
 const LeftLogo = styled.div`
@@ -47,17 +50,6 @@ const LeftLogo = styled.div`
   display: flex;
   align-items: center;
   margin-left: 20px;
-
-  background: -webkit-linear-gradient(45deg, #ff503d, #e8e5e6);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-  & > p {
-    font-family: "Comfortaa", sans-serif;
-    font-size: 26px;
-    padding-top: 26px;
-    font-weight: 700;
-  }
 `;
 
 const NavListDesktop = styled.ul`
@@ -68,7 +60,6 @@ const NavListDesktop = styled.ul`
 
   & > li {
     border-bottom: 1px solid white;
-    padding-top: 26px;
     align-items: center;
 
     &:hover {
