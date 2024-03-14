@@ -125,7 +125,6 @@ const Projects = () => {
 
 const Container = styled.div`
   width: 100%;
-  margin-bottom: 100px;
   display: flex;
   justify-content: center;
   /*background-color: #dde9ed;*/ /** Bleu-gris pale */

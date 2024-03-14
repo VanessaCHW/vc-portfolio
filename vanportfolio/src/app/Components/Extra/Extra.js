@@ -6,33 +6,36 @@ const Extra = () => {
   return (
     <Container id="section-extra">
       <Content>
-        <h1>Extra</h1>
-        <p>Quelques infos supplémentaires question de mieux de connaître.</p>
-
-        <InfoContainer>
-          <InfoBox>
-            <ImageFilter></ImageFilter>
-            <InfoText>
-              Je suis de personnalité calme, porte des lunettes et aime lire
-              pour le fun (nerd much?!). 🤓📕
-            </InfoText>
-          </InfoBox>
-          <InfoBox>
-            <ImageFilter>
-              <InfoText>
-                Mon sport préféré est l'escalade de bloc ou en top-rope. 🧗‍♀️🌲
-              </InfoText>
-            </ImageFilter>
-          </InfoBox>
-          <InfoBox>
-            J'ai un talent négatif en pâtisserie (excepté pour les tiramisu).
-            🍰🍞
-          </InfoBox>
-          <InfoBox>
-            Un de mes hobbies est le dessin traditionnel ou digital. J'ai
-            d'ailleurs fait le graphique au haut de la page. ✏️💻
-          </InfoBox>
-        </InfoContainer>
+        <h1>&gt; extra</h1>
+        <div>
+          Quelques infos supplémentaires question de mieux de connaître.
+        </div>
+        <FactContainer>
+          <Fact>
+            <img src="icon-climb.png" />
+            <p>
+              Mon sport préféré est l'escalade intérieure, en bloc ou en
+              top-rope.
+            </p>
+          </Fact>
+          <Fact>
+            <img src="icon-read.png" />
+            <p>J'aime lire: romans, bien-être, mangas, etc.</p>
+          </Fact>
+          <Fact>
+            <img src="icon-bake.png" />
+            <p>
+              Si je pouvais acquérir un nouveau talent, ce serait en pâtisserie.
+            </p>
+          </Fact>
+          <Fact>
+            <img src="icon-draw.png" />
+            <p>
+              Un de mes hobbies est le dessin traditionnel et digital. J'ai
+              d'ailleurs fait le graphique d'accueil sur cette page.
+            </p>
+          </Fact>
+        </FactContainer>
       </Content>
     </Container>
   );
@@ -40,56 +43,33 @@ const Extra = () => {
 
 const Container = styled.div`
   width: 100%;
-  margin-bottom: 50px;
   display: flex;
   justify-content: center;
+  background-color: #f3f2f2;
 `;
 
 const Content = styled.div`
   max-width: var(--max-width);
-  flex-grow: 1;
-`;
-
-const InfoContainer = styled.div`
   display: flex;
-  margin: 50px 0px;
+  flex-flow: column;
+  margin-top: 50px;
 `;
 
-const InfoBox = styled.div`
-  width: 25%;
-  height: 240px;
-  padding: 16px;
-
-  position: relative;
-  overflow: hidden;
-`;
-
-const Image = styled.img`
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 300px;
-`;
-
-const ImageFilter = styled.div`
-  position: absolute;
-  left: 0px;
-  top: 0px;
+const FactContainer = styled.div`
   display: flex;
-  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  gap: 20px;
+`;
+
+const Fact = styled.div`
+  flex-basis: 50%;
+  padding: 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 4px;
   text-align: center;
-  background-color: pink;
-  width: 100%;
-  height: 240px;
-  opacity: 0.55;
-
-  :hover {
-    opacity: 0.8;
-  }
-`;
-
-const InfoText = styled.div`
-  z-index: 3;
 `;
 
 export default Extra;
+
+/**<a target="_blank" href="https://icons8.com/icon/Rr5WwA0q2lr5/climbing">Climbing</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> */
