@@ -39,10 +39,13 @@ const Projects = () => {
             </ProjLinks>
             <ProjTitle>Site personnel / portfolio</ProjTitle>
             <div>
-              Page personnelle crée avec Next. Page personnelle crée avec Next.
-              Page personnelle crée avec Next. Page personnelle crée avec Next.{" "}
+              Application React crée avec <i>Next.js</i> et utilisation de{" "}
+              <i>styled-components</i> pour le style et les animations. Contient
+              une introduction, une section "timeline" et une section portfolio.
+              Des mises à jours sont à venir.
             </div>
           </ProjBox>
+
           <ProjBox>
             <ImgContainer>
               <PinkPlanImg src="pinkplanphones.png" />
@@ -56,10 +59,13 @@ const Projects = () => {
                 GITHUB & DÉMO(.GIF)
               </CodeLink>
             </ProjLinks>
-            <ProjTitle>"Pink Planner" - Application de calendrier</ProjTitle>
+            <ProjTitle>"Pink Planner" - Application de planification</ProjTitle>
             <div>
-              Page personnelle crée avec Next. Page personnelle crée avec Next.
-              Page personnelle crée avec Next. Page personnelle crée avec Next.{" "}
+              Projet final en React dans le cadre du bootcamp @Concordia. Dans
+              l'application, l'utilisateur peut visualiser, ajouter, modifier ou
+              supprimer des évènements. La page d'accueil contient un résumé des
+              tâches prévues pour la journée, la météo quotidienne et un aperçu
+              de quelques articles d'actualité.{" "}
             </div>
           </ProjBox>
         </ProjectList>
@@ -67,7 +73,7 @@ const Projects = () => {
         <ProjectList>
           <ProjBox>
             <ImgContainer>
-              <FolioImg src="snow.png" />
+              <SnowImg src="snow.png" />
             </ImgContainer>
             <ProjLinks>
               CONCORDIA BOOTCAMP / 2021 /{" "}
@@ -84,13 +90,15 @@ const Projects = () => {
             </ProjLinks>
             <ProjTitle>"Snowball escape" - Jeu Javascript</ProjTitle>
             <div>
-              Page personnelle crée avec Next. Page personnelle crée avec Next.
-              Page personnelle crée avec Next.{" "}
+              Jeu en JavaScript dans lequel l'utilisateur se déplace avec les
+              flèches du clavier pour éviter les obstacles ou se déplacer vers
+              un objet. Contient un compteur pour le niveau, le score, et le
+              nombre de vies restantes.{" "}
             </div>
           </ProjBox>
           <ProjBox>
             <ImgContainer>
-              <FolioImg src="twit1.png" />
+              <TwitImg src="twitbrowser.png" />
             </ImgContainer>
             <ProjLinks>
               CONCORDIA BOOTCAMP / 2021 /{" "}
@@ -103,18 +111,13 @@ const Projects = () => {
             </ProjLinks>
             <ProjTitle>Twitter clone</ProjTitle>
             <div>
-              Page personnelle crée avec Next. Page personnelle crée avec Next.
-              Page personnelle crée avec Next.{" "}
+              Clone du site Twitter/X en React, dans le cadre du bootcamp
+              @Concordia pour maîtriser l'utilisation des appels sur une API.
+              L'application permet d'afficher, d'écrire et de supprimer les
+              tweets, et d'afficher le profil de plusieurs utilisateurs.{" "}
             </div>
           </ProjBox>
         </ProjectList>
-
-        <Subtitle>&gt; mises à jour au portfolio à venir </Subtitle>
-        <ul>
-          <li>Design pour format mobile / tablette</li>
-          <li>Page individuelle pour chaque projet</li>
-          <li>Dark theme</li>
-        </ul>
       </Content>
     </Container>
   );
@@ -134,16 +137,6 @@ const Content = styled.div`
   margin-top: 50px;
   margin-bottom: 100px;
 `;
-
-/*const ProjectList = styled.div`
-  width: 100%;
-  display: flex;
-  gap: 30px;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 50px;
-`;*/
 
 const LienGithub = styled.a`
   color: var(--global-pink);
@@ -182,8 +175,18 @@ const PinkPlanImg = styled.img`
   top: 50px;
 `;
 
+const SnowImg = styled.img`
+  height: 80%;
+`;
+
+const TwitImg = styled.img`
+  width: 82%;
+  position: absolute;
+  top: 50px;
+`;
+
 const ProjLinks = styled.div`
-  color: #929292;
+  color: #9a9a9a;
   font-family: "Quicksand", sans-serif;
   font-weight: 600;
   margin-top: 18px;
