@@ -10,12 +10,10 @@ const Timeline = () => {
   return (
     <Container id="section-parcours">
       <Content>
-        <h1>Parcours</h1>
+        <h1>&gt; mon parcours</h1>
         <p>
           Apperçu de mes expériences de travail et formations sous forme de
-          timeline. S.V.P. se référer au CV pour obtenir de plus amples détails
-          sur chaque élément. Pour obtenir mon CV, veuillez-me contacter sur
-          Linkedin.
+          timeline. S.V.P. se référer au CV pour obtenir de plus amples détails.
         </p>
 
         <TimelineContainer>
