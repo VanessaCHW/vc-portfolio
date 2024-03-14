@@ -2,9 +2,6 @@
 import React from "react";
 import styled from "styled-components";
 
-import ProjectBox from "./ProjectBox";
-import ProjectsData from "./ProjectsData";
-
 const Projects = () => {
   return (
     <Container id="section-projets">
@@ -78,13 +75,16 @@ const Projects = () => {
             <ProjLinks>
               CONCORDIA BOOTCAMP / 2021 /{" "}
               <CodeLink
-                href="https://github.com/VanessaCHW/vc-portfolio"
+                href="https://github.com/VanessaCHW/project-snowfight"
                 target="_blank"
               >
                 GITHUB
               </CodeLink>{" "}
               /{" "}
-              <CodeLink href="https://vanportfolio.vercel.app/" target="_blank">
+              <CodeLink
+                href="https://snowfight-escape-demo.netlify.app"
+                target="_blank"
+              >
                 DÉMO
               </CodeLink>
             </ProjLinks>
@@ -103,7 +103,7 @@ const Projects = () => {
             <ProjLinks>
               CONCORDIA BOOTCAMP / 2021 /{" "}
               <CodeLink
-                href="https://github.com/VanessaCHW/vc-portfolio"
+                href="https://github.com/VanessaCHW/project-m5-twitter-clone"
                 target="_blank"
               >
                 GITHUB
@@ -127,7 +127,6 @@ const Container = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
-  /*background-color: #dde9ed;*/ /** Bleu-gris pale */
 `;
 
 const Content = styled.div`
@@ -202,11 +201,6 @@ const ProjTitle = styled.div`
 const CodeLink = styled.a`
   color: var(--global-pink);
   text-decoration: underline;
-`;
-
-const Subtitle = styled.h2`
-  margin-top: 50px;
-  margin-bottom: 20px;
 `;
 
 export default Projects;
