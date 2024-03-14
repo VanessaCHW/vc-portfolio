@@ -13,9 +13,8 @@ const Landing = () => {
         <LandingDescription>
           Ingénieure électrique de formation, j'ai complété un certificat en
           Développement Web Full Stack. J'ai par la suite occupé un poste de
-          Programmeur Analyste, pour lequel j'ai pu travailler sur le
-          développement de l'interface utilisateur d'une application web,
-          notamment en JavaScript/React.
+          Programmeur Analyste, dans lequel j'ai pu travailler sur le
+          développement d'interface utilisateur en React.
           <br />
           <br />
           Je cherche à intégrer une nouvelle équipe et serai contente d'en
