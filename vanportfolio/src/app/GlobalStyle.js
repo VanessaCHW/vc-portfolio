@@ -44,6 +44,7 @@ html, body {
     font-weight: var(--regular-font-weight);
     font-size: var(--second-font-size);
     /*line-height: 1.5;*/
+    scroll-behavior: smooth;
     
 }
 
