@@ -12,28 +12,35 @@ const Extra = () => {
         </div>
         <FactContainer>
           <Fact>
-            <img src="icon-climb.png" />
-            <p>
+            <CardImg src="icon-climb.png" />
+            <CardTitle>Sport</CardTitle>
+            <CardText>
               Mon sport préféré est l'escalade intérieure, en bloc ou en
               top-rope.
-            </p>
+            </CardText>
           </Fact>
           <Fact>
-            <img src="icon-read.png" />
-            <p>J'aime lire: romans, bien-être, mangas, etc.</p>
+            <CardImg src="icon-read.png" />
+            <CardTitle>Passe-temps</CardTitle>
+            <CardText>
+              J'aime lire: romans, bien-être, mangas, articles, etc.
+            </CardText>
           </Fact>
           <Fact>
-            <img src="icon-bake.png" />
-            <p>
-              Si je pouvais acquérir un nouveau talent, ce serait en pâtisserie.
-            </p>
+            <CardImg src="icon-bake.png" />
+            <CardTitle>Souhait</CardTitle>
+            <CardText>
+              Si je pouvais acquérir un nouveau talent, ce serait d'être bonne
+              en pâtisserie.
+            </CardText>
           </Fact>
           <Fact>
-            <img src="icon-draw.png" />
-            <p>
-              Un de mes hobbies est le dessin traditionnel et digital. J'ai
-              d'ailleurs fait le graphique d'accueil sur cette page.
-            </p>
+            <CardImg src="icon-draw.png" />
+            <CardTitle>Talent caché</CardTitle>
+            <CardText>
+              Le dessin traditionnel, et récemment digital. J'ai d'ailleurs fait
+              le graphique d'accueil sur cette page.
+            </CardText>
           </Fact>
         </FactContainer>
       </Content>
@@ -58,16 +65,50 @@ const Content = styled.div`
 const FactContainer = styled.div`
   display: flex;
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
   gap: 20px;
 `;
 
 const Fact = styled.div`
   flex-basis: 50%;
   padding: 20px;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border-radius: 4px;
-  text-align: center;
+  background: white;
+  transition: transform 250ms;
+
+  &:hover {
+    transform: translateY(-20px);
+    background: rgb(215, 227, 255);
+    background: linear-gradient(
+      45deg,
+      rgba(215, 227, 255, 1) 0%,
+      rgba(255, 179, 179, 1) 100%
+    );
+  }
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+`;
+
+const CardImg = styled.img`
+  height: 70px;
+`;
+const CardTitle = styled.h4`
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.1px;
+`;
+
+const CardText = styled.div`
+  color: grey;
+  font-weight: 400;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
 `;
 
 export default Extra;
