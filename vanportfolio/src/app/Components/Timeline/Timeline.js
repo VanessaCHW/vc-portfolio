@@ -12,8 +12,8 @@ const Timeline = () => {
       <Content>
         <h1>&gt; mon parcours</h1>
         <p>
-          Apperçu de mes expériences de travail et formations sous forme de
-          timeline. S.V.P. se référer au CV pour obtenir de plus amples détails.
+          Apperçu de mes expériences professionnelles et formations sous forme
+          de ligne chronologique, à partir de l'évènement le plus récent.
         </p>
 
         <TimelineContainer>
