@@ -35,12 +35,11 @@ const Projects = () => {
               </CodeLink>
             </ProjLinks>
             <ProjTitle>Site personnel / portfolio</ProjTitle>
-            <div>
-              Application React crée avec <i>Next.js</i> et utilisation de{" "}
-              <i>styled-components</i> pour le style et les animations. Contient
-              une introduction, une section "timeline" et une section portfolio.
-              Des mises à jours sont à venir.
-            </div>
+            <ProjDesc>
+              Application React crée avec <i>Next.js</i>. Contient une
+              introduction, une section "timeline" et une section portfolio. Des
+              mises à jours sont à venir.
+            </ProjDesc>
           </ProjBox>
 
           <ProjBox>
@@ -53,17 +52,16 @@ const Projects = () => {
                 href="https://github.com/VanessaCHW/pink-planner"
                 target="_blank"
               >
-                GITHUB & DÉMO(.GIF)
+                GITHUB & DÉMO(GIF)
               </CodeLink>
             </ProjLinks>
             <ProjTitle>"Pink Planner" - Application de planification</ProjTitle>
-            <div>
-              Projet final en React dans le cadre du bootcamp @Concordia. Dans
-              l'application, l'utilisateur peut visualiser, ajouter, modifier ou
-              supprimer des évènements. La page d'accueil contient un résumé des
-              tâches prévues pour la journée, la météo quotidienne et un aperçu
-              de quelques articles d'actualité.{" "}
-            </div>
+            <ProjDesc>
+              Projet final en React. L'utilisateur peut visualiser, ajouter,
+              modifier ou supprimer des évènements. La page d'accueil contient
+              un résumé des tâches prévues, la météo et un aperçu et liens vers
+              quelques articles d'actualité.{" "}
+            </ProjDesc>
           </ProjBox>
         </ProjectList>
 
@@ -89,12 +87,12 @@ const Projects = () => {
               </CodeLink>
             </ProjLinks>
             <ProjTitle>"Snowball escape" - Jeu Javascript</ProjTitle>
-            <div>
+            <ProjDesc>
               Jeu en JavaScript dans lequel l'utilisateur se déplace avec les
               flèches du clavier pour éviter les obstacles ou se déplacer vers
               un objet. Contient un compteur pour le niveau, le score, et le
               nombre de vies restantes.{" "}
-            </div>
+            </ProjDesc>
           </ProjBox>
           <ProjBox>
             <ImgContainer>
@@ -110,12 +108,12 @@ const Projects = () => {
               </CodeLink>{" "}
             </ProjLinks>
             <ProjTitle>Twitter clone</ProjTitle>
-            <div>
-              Clone du site Twitter/X en React, dans le cadre du bootcamp
-              @Concordia pour maîtriser l'utilisation des appels sur une API.
-              L'application permet d'afficher, d'écrire et de supprimer les
-              tweets, et d'afficher le profil de plusieurs utilisateurs.{" "}
-            </div>
+            <ProjDesc>
+              Clone du site Twitter/X en React, pour illustrer l'utilisation des
+              appels sur une API. L'application permet d'afficher, d'écrire et
+              de supprimer les tweets, et d'afficher le profil de plusieurs
+              utilisateurs.{" "}
+            </ProjDesc>
           </ProjBox>
         </ProjectList>
       </Content>
@@ -184,7 +182,7 @@ const TwitImg = styled.img`
 `;
 
 const ProjLinks = styled.div`
-  color: #9a9a9a;
+  color: var(--desc-superlight-grey);
   font-family: "Quicksand", sans-serif;
   font-weight: 600;
   margin-top: 18px;
@@ -194,13 +192,20 @@ const ProjLinks = styled.div`
 const ProjTitle = styled.div`
   font-weight: 600;
   margin-top: 6px;
-  margin-bottom: 3px;
-  font-size: 18px;
+  margin-bottom: 6px;
+  font-size: 20px;
 `;
 
 const CodeLink = styled.a`
   color: var(--global-pink);
   text-decoration: underline;
+`;
+
+const ProjDesc = styled.div`
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--desc-light-grey);
 `;
 
 export default Projects;
