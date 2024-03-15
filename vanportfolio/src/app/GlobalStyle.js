@@ -18,6 +18,9 @@ const GlobalStyle = createGlobalStyle`
     --theme-orange: #F58F7C;
     --global-pink:#F57272;
 
+    --desc-light-grey: #757575; /** Texte Projets et Extra */
+    --desc-superlight-grey: #9a9a9a; /** Texte Liens pour Projets */
+
     --background-light:#f9fafb; /* Couleur du pattern "geometry2.png" */
 
     --regular-font-size: 18px; /** Desktop: 16px - 20px */
