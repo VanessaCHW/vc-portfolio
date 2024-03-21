@@ -132,6 +132,13 @@ const Content = styled.div`
   flex-grow: 1;
   margin-top: 50px;
   margin-bottom: 100px;
+
+  /**Mobile */
+  @media (max-width: 600px) {
+    max-width: 100%;
+    margin: 0 0 1em 0;
+    padding: 1em;
+  }
 `;
 
 const LienGithub = styled.a`
@@ -144,6 +151,12 @@ const ProjectList = styled.div`
   display: flex;
   gap: 30px;
   margin-top: 50px;
+
+  /**Mobile */
+  @media (max-width: 600px) {
+    flex-flow: column wrap;
+    margin-top: 1.5em;
+  }
 `;
 
 const ProjBox = styled.div`
@@ -159,6 +172,11 @@ const ImgContainer = styled.div`
   align-items: center;
   position: relative;
   overflow: hidden;
+
+  /**Mobile */
+  @media (max-width: 600px) {
+    height: 300px;
+  }
 `;
 
 const FolioImg = styled.img`
@@ -185,15 +203,15 @@ const ProjLinks = styled.div`
   color: var(--desc-superlight-grey);
   font-family: "Quicksand", sans-serif;
   font-weight: 600;
-  margin-top: 18px;
-  font-size: 16px;
+  margin-top: 0.5em;
+  font-size: 14px;
 `;
 
 const ProjTitle = styled.div`
   font-weight: 600;
   margin-top: 6px;
   margin-bottom: 6px;
-  font-size: 20px;
+  font-size: 18px;
 `;
 
 const CodeLink = styled.a`
@@ -204,7 +222,7 @@ const CodeLink = styled.a`
 const ProjDesc = styled.div`
   font-family: "Quicksand", sans-serif;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   color: var(--desc-light-grey);
 `;
 
