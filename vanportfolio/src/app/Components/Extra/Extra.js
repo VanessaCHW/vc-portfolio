@@ -53,6 +53,11 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   background-color: #f3f2f2;
+
+  /**Mobile */
+  @media (max-width: 600px) {
+    padding: 16px;
+  }
 `;
 
 const Content = styled.div`
@@ -60,6 +65,12 @@ const Content = styled.div`
   display: flex;
   flex-flow: column;
   margin-top: 50px;
+
+  /**Mobile */
+  @media (max-width: 600px) {
+    max-width: 100%;
+    margin: 0;
+  }
 `;
 
 const FactContainer = styled.div`
@@ -67,6 +78,13 @@ const FactContainer = styled.div`
   margin-top: 50px;
   margin-bottom: 70px;
   gap: 20px;
+
+  /**Mobile */
+  @media (max-width: 600px) {
+    margin: 1em 0 1em 0;
+    flex-direction: column;
+    gap: 10px;
+  }
 `;
 
 const Fact = styled.div`

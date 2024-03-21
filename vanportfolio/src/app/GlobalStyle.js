@@ -66,6 +66,11 @@ h1 {
   font-size: 40px;
   font-weight: 400;
   margin-bottom: 30px;
+
+   /**Mobile */
+   @media (max-width: 600px) {
+    margin-bottom:10px;
+  }
 }
 
 div{
