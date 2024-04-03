@@ -1,8 +1,9 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 
 const NavBar = () => {
+  const [menuShown, setMenuShown] = useState(false);
   return (
     <Header>
       <LeftLogo>
@@ -25,9 +26,26 @@ const NavBar = () => {
         </li>
       </NavListDesktop>
 
-      {/* Dropdown list for mobile view
-          TODO
-      */}
+      {/* Dropdown list for mobile view*/}
+      <NavListMobile>
+        <Hamburger src="hamburg.png" onClick={() => setMenuShown(!menuShown)} />
+        {menuShown && (
+          <MobileList>
+            <li>
+              <a href="#section-parcours">Parcours</a>
+            </li>
+            <li>
+              <a href="#section-projets">Projets</a>
+            </li>
+            <li>
+              <a href="#section-extra">Extra</a>
+            </li>
+            <li>
+              <a href="#section-contact">Contact</a>
+            </li>
+          </MobileList>
+        )}
+      </NavListMobile>
     </Header>
   );
 };
@@ -41,15 +59,27 @@ const Header = styled.header`
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   font-weight: 500;
+
+  /**Mobile */
+  @media (max-width: 600px) {
+    justify-content: right;
+    padding-right: 16px;
+  }
 `;
 
 const LeftLogo = styled.div`
   position: absolute;
   left: 0;
-  height: 100%;
+  height: 42px;
   display: flex;
   align-items: center;
   margin-left: 20px;
+
+  @media (max-width: 600px) {
+    & > img {
+      height: 42px;
+    }
+  }
 `;
 
 const NavListDesktop = styled.ul`
@@ -72,6 +102,34 @@ const NavListDesktop = styled.ul`
     @media (max-width: 600px) {
       display: none;
     }
+  }
+`;
+
+const NavListMobile = styled.div`
+  display: none;
+  @media (max-width: 600px) {
+    display: flex;
+    justify-content: center;
+  }
+`;
+
+const Hamburger = styled.img`
+  height: 42px;
+`;
+
+const MobileList = styled.ul`
+  position: absolute;
+  top: 56px;
+  right: 0px;
+  width: 100%;
+  padding: 0px 30px;
+  background: var(--background-light);
+  font-size: 28px;
+  list-style-type: none;
+  text-align: center;
+
+  & > li {
+    height: 70px;
   }
 `;
 
