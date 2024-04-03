@@ -67,6 +67,11 @@ const NavListDesktop = styled.ul`
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
+
+    /**Mobile */
+    @media (max-width: 600px) {
+      display: none;
+    }
   }
 `;
 
