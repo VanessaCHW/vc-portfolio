@@ -55,11 +55,21 @@ const Content = styled.div`
   & > h1 {
     color: white;
   }
+
+  /**Mobile */
+  @media (max-width: 600px) {
+    margin: 20px 16px;
+  }
 `;
 
 const ContactInfo = styled.div`
   display: flex;
   flex-flow: row wrap;
+
+  /**Mobile */
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
 `;
 
 const AddressBox = styled.div`
